@@ -165,8 +165,13 @@
             class="form__input"
             placeholder="Ваш телефон *"
           />
-          <select class="form__input form__input--select" name="" id="">
-            <option value="placeholder">Тема встречи *</option>
+          <select class="form__input form__input--select" name="" id="custom">
+            <option value="placeholder" disabled selected>
+              Тема встречи *
+            </option>
+            <option value="1">Встреча 1</option>
+            <option value="2">Встреча 2</option>
+            <option value="3">Встреча 3</option>
           </select>
           <textarea
             name=""
@@ -612,10 +617,5 @@
     </footer>
     <!-- footer -->
   </body>
-
-  <script>
-    var a = prompt("Ваше имя?");
-
-    alert("Привет, " + a + "!");
-  </script>
+  <script src="../Newproject/js/main.js"></script>
 </html>
