@@ -681,9 +681,15 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     background: none;
     border: none;
-    width: 100%;
     margin-left: 10px;
     cursor: pointer;
     padding-bottom: 3px;
+}
+.custom_select__option:hover {
+    background-color: transparent;
+    color: #2D5E5E;
+    border-radius: 20px; 
+    padding-left: 8px;
+    opacity: 0.5; 
 }
 /* custom select */

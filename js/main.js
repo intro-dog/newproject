@@ -32,14 +32,14 @@ function customSelect() {
 
     listItem.onclick = function() {
         list.classList.toggle('custom_select__list--open');
-        chose.innerText = listItem.innerText;
+         chose.innerText = listItem.innerText;
         select.value = item.value;
     };
     });
-
-    chose.onclick = function() {
+   chose.onclick = function() {
         list.classList.toggle('custom_select__list--open');
     }
     }
 }
 customSelect();
+ 
