@@ -647,6 +647,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     cursor: pointer;
 }
+.form__input:hover {
+    border: 2px solid rgb(85, 84, 84)
+}
 .custom_select__chose:after {
     content: '';
     width: 0px;
@@ -657,7 +660,9 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     right: 0;
     top: 50%;
-    
+}
+.custom_select__chose:after:hover {
+    border: 2px solid #333
 }
 .custom_select__list {
     position: relative;
