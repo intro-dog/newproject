@@ -32,14 +32,28 @@ function customSelect() {
 
     listItem.onclick = function() {
         list.classList.toggle('custom_select__list--open');
-         chose.innerText = listItem.innerText;
+        chose.innerText = listItem.innerText;
         select.value = item.value;
     };
     });
-   chose.onclick = function() {
-        list.classList.toggle('custom_select__list--open');
+    chose.onclick = function() {
+       list.classList.toggle('custom_select__list--open')
+    } 
     }
     }
-}
-customSelect();
- 
+
+customSelect()
+
+const menuBody = document.querySelector('.custom_select__list');
+
+    document.addEventListener('click', menu);
+
+    function menu(event) {
+        if (event.target.closest('.custom_select__chose')) {
+            menuBody.classList.toggle('custom_select__list', 'custom_select__list--open');
+        }
+        if (!event.target.closest('.custom_select__chose')) {
+            menuBody.classList.remove('custom_select__list--open')  
+        }
+    }
+    
