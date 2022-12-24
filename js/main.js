@@ -27,7 +27,6 @@ function customSelect() {
         if(item.value === 'placeholder') {
             listItem.setAttribute('disabled', '');
         }
-
         list.appendChild(listItem);
 
     listItem.onclick = function() {
@@ -54,6 +53,6 @@ const menuBody = document.querySelector('.custom_select__list');
         }
         if (!event.target.closest('.custom_select__chose')) {
             menuBody.classList.remove('custom_select__list--open')  
-        }
+        } 
     }
     

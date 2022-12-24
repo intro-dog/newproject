@@ -295,7 +295,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 30px;
 }
 .form__input {
-    border: 1px solid #000000;
+    border: 1px solid rgb(85, 84, 84);
     border-radius: 10px;
     background: #fff;
     font-size: 18px;
