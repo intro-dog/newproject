@@ -636,6 +636,9 @@ h1, h2, h3, h4, h5, h6 {
 .custom_select__definition {
     position: relative;
 }
+.custom_select__list {
+    display: none;
+}
 .custom_select__chose br {
     display: none;
 }
@@ -678,6 +681,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.5s;
 }
 .custom_select__list--open {
+    display: block;
     opacity: 1;
     pointer-events: unset;
 }
