@@ -115,6 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 .slider__arrow {
     border:none;
     background: none;
+    cursor: pointer;
 }
 .slider__arrow svg {
     fill: #ADDDDE
@@ -702,3 +703,43 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.5; 
 }
 /* custom select */
+
+/* custom slider */
+.slider {
+    position: relative;
+}
+.custom_slider__dots {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 25px);
+    padding: 0;
+    margin: 0;
+    transform: translateX(-50%);
+}
+.custom_slider__dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #adddde;
+    border: none;
+    color: transparent;
+    font-size: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.4;
+}     
+.custom_slider__dot.custom_slider__dot--current {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+}
+/* custom slider */
